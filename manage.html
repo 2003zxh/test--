@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manage</title>
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+</head>
+<body>
+    <body>
+        <input type="text">
+        <button type="button" id="search">查询</button>
+        <button type="button" class="btn btn-Drimary" id="updata">新增
+        <button type="button" class="btn btn-Danger" id="delAllUser">批量删除 </button>
+        <table >
+            <thead>
+                <th>id</th>
+                <th>菜名</th>
+                <th>价格</th>
+                <th>描述</th>
+                <th>类型名称</th>
+                <th>菜类型</th>
+                <th>操作</th>
+            </thead>
+            <tbody id="ul1">
+            </tbody>
+        </table>
+        <!-- 模态框 -->
+    <div class="dialog">
+        <div class="container">
+            <!-- 头部 -->
+            <div class="dialog_header">
+                新增菜名信息
+            </div>
+            <!-- 中部 -->
+            <div class="dialog_center">
+                <div>菜名:&nbsp;&nbsp;<input type="text" name="name"></div>
+            </div>
+            <div class="dialog_center">
+                <div>价格:&nbsp;&nbsp;<input type="text" name="price"></div>
+            </div>
+            <div class="dialog_center">
+                <div>描述: <textarea rows="" cols="" name="description"></textarea></div>
+            </div>
+            <div class="dialog_center">
+                <div>类型名称:&nbsp;&nbsp;<input type="text" name="typeid"></div>
+            </div>
+            <!-- 尾部 -->
+            <div class="dialog_footer">
+                <button class="cancel">取消</button>
+                <button class="submit">确定</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script type="text/javascript" src="js/manage.js"></script>
+</body>
+</html>

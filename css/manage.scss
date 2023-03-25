@@ -1,0 +1,58 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 30px;
+    width: 1200px;
+    margin-top: 10px;
+}
+
+th{
+    @extend table;
+}
+
+td{
+    @extend table;
+}
+
+.dialog {
+    display:none;
+    width: 100%;
+    height: 100vh;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    .container {
+        margin: 0 auto;
+        font-size: 18px;
+        width: 60%;
+        height: 260px;
+        background-color:black;
+        text-align: center;
+    }
+
+    .dialog_header {
+        background-color: red;
+    }
+    
+    .dialog_center{
+        color:white;
+        background-color:black;
+    }
+    
+    .dialog_footer{
+        .cancel:hover{
+            background-color: chartreuse;
+        }
+        .submit{
+            @extend .cancel;
+        }
+    }
+}
+.toEdit:hover{
+    background-color: chartreuse;
+}
+.toDelete{
+    @extend .toEdit;
+}
