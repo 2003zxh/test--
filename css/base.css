@@ -85,7 +85,7 @@ table, th, td {
 .modify, .add {
   width: 400px;
   height: 350px;
-  background-color: rgba(214, 124, 124, 0.668);
+  background-color: #d67c7c;
   position: absolute;
   top: 0;
   left: 30%;
