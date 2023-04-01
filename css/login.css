@@ -6,7 +6,7 @@
 body {
   font-family: myFont;
   font-size: 100px;
-  background: url("../img/1.jpg") no-repeat;
+  background: url("../img/login.jpg") no-repeat;
   background-size: 100%;
   object-fit: fill;
   overflow: hidden;
@@ -20,7 +20,7 @@ body {
   height: 370px;
   margin-top: 35px;
   transform: translateX(-50%);
-  transition: all .5s;
+  transition: all 10s;
   transform-style: preserve-3d;
 }
 
@@ -33,6 +33,27 @@ body {
   margin-top: 5%;
 }
 
+.time {
+  display: flex;
+  flex-direction: row;
+}
+
+.gain {
+  position: absolute;
+  bottom: 30px;
+  right: 95px;
+  border: 0;
+  font-size: 14px;
+  background-color: #fff;
+  color: #330867;
+  height: 30px;
+  width: 90px;
+}
+
+.gain:hover {
+  background-color: #30cfd0;
+}
+
 .login, .logon {
   top: 0;
   width: 400px;
@@ -40,11 +61,6 @@ body {
   text-align: center;
   border-radius: 20px;
   position: absolute;
-}
-
-.logon {
-  display: none;
-  transform: rotateY(180deg);
 }
 
 .title {
@@ -72,8 +88,20 @@ input {
   left: 20%;
 }
 
-.btn {
-  width: 60%;
+.tipes {
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+  bottom: 30px;
+  right: 95px;
+  background-color: transparent;
+  color: #fff;
+  height: 20px;
+  width: 70px;
+}
+
+.loginBtn, .logonBtn {
+  width: 40%;
   height: 30px;
   border-radius: 10px;
   border: 0;
@@ -85,53 +113,24 @@ input {
   background-image: linear-gradient(to right, #30cfd0, #330867);
 }
 
-.btn:hover {
+.loginBtn:hover, .logonBtn:hover {
   box-shadow: 0 0 1px 1px white;
 }
 
-.loginBtn {
+.logonBtn {
+  position: relative;
+  bottom: 60px;
+}
+
+a {
   color: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-bottom: 10px;
-  font-size: 12px;
-  text-decoration: underline;
-  background-color: transparent;
-}
-
-.loginBtn:hover {
-  color: chartreuse;
-}
-
-.base_Words, label, .loginBox .err, .loginBox .true {
-  display: none;
+  font-size: 15px;
+  text-decoration: none;
   position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 34px;
+  right: 170px;
 }
 
-label {
-  right: 5px;
-  width: 33%;
-  color: red;
-  font-size: 12px;
-  padding: 0px 5px;
-  border-radius: 5px;
-  transform-origin: right;
-  transform: translateY(-50%);
-}
-
-.loginBox .err, .loginBox .true {
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.7);
-  font-size: 12px;
-  color: white;
-  padding: 4px;
-  border-radius: 10px;
-  z-index: 1;
-}
-
-.loginBox .true {
-  color: chartreuse;
+a:hover {
+  color: #30cfd0;
 }
